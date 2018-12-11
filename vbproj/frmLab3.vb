@@ -21,6 +21,7 @@
 
     Private Sub lblFBlack_Click(sender As Object, e As EventArgs) Handles lblFBlack.Click
         txtInput.ForeColor = Color.Black
+
     End Sub
 
     Private Sub lblFOrange_Click(sender As Object, e As EventArgs) Handles lblFOrange.Click
