@@ -78,6 +78,12 @@
     <Compile Include="frmJob4.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmJob6.Designer.vb">
+      <DependentUpon>frmJob6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmJob6.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmLab2.Designer.vb">
       <DependentUpon>frmLab2.vb</DependentUpon>
     </Compile>
@@ -96,10 +102,40 @@
     <Compile Include="frmLab5.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmPractice1.Designer.vb">
+      <DependentUpon>frmPractice1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPractice1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPractice2.Designer.vb">
+      <DependentUpon>frmPractice2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPractice2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPractice3.Designer.vb">
+      <DependentUpon>frmPractice3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPractice3.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmPractice4.Designer.vb">
       <DependentUpon>frmPractice4.vb</DependentUpon>
     </Compile>
     <Compile Include="frmPractice4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPractice5.Designer.vb">
+      <DependentUpon>frmPractice5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPractice5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPractice6.Designer.vb">
+      <DependentUpon>frmPractice6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPractice6.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmSaraly.Designer.vb">
@@ -128,6 +164,9 @@
     <EmbeddedResource Include="frmJob4.resx">
       <DependentUpon>frmJob4.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmJob6.resx">
+      <DependentUpon>frmJob6.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLab2.resx">
       <DependentUpon>frmLab2.vb</DependentUpon>
     </EmbeddedResource>
@@ -136,6 +175,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLab5.resx">
       <DependentUpon>frmLab5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPractice1.resx">
+      <DependentUpon>frmPractice1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPractice2.resx">
+      <DependentUpon>frmPractice2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPractice3.resx">
+      <DependentUpon>frmPractice3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPractice4.resx">
+      <DependentUpon>frmPractice4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPractice5.resx">
+      <DependentUpon>frmPractice5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPractice6.resx">
+      <DependentUpon>frmPractice6.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSaraly.resx">
       <DependentUpon>frmSaraly.vb</DependentUpon>
@@ -158,6 +215,9 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\518164-backgrounds.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
