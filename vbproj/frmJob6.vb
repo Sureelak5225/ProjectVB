@@ -2,30 +2,7 @@
     Dim StartP As Double = 1250000
     Dim Total As Double = StartP
     Private Sub chkCarForMe_Click(sender As Object, e As EventArgs) Handles chkCarForMe.Click
-        If chkCarForMe.Checked = True Then
-            GroupBox1.Enabled = True
-            GroupBox2.Enabled = True
-            lblStarPrice.Text = StartP
-            lblPaidPrice.Text = Total
 
-        Else
-            If MsgBox("ต้องการยกเลิกซื้อรถใช่หรือไม่", vbYesNo) = vbYes Then
-                GroupBox1.Enabled = False
-                GroupBox2.Enabled = False
-                chkItemsAdd1.Checked = False
-                chkItemsAdd2.Checked = False
-                chkItemsAdd3.Checked = False
-                chkItemsAdd4.Checked = False
-                chkFree1.Checked = False
-                chkFree2.Checked = False
-                chkFree3.Checked = False
-                chkCarForMe.Enabled = False
-                lblStarPrice.Text = ""
-                lblPaidPrice.Text = ""
-            Else
-                chkCarForMe.Checked = True
-            End If
-        End If
     End Sub
 
     Private Sub chkItemsAdd1_Click(sender As Object, e As EventArgs) Handles chkItemsAdd1.Click
@@ -68,6 +45,7 @@
     End Sub
     Private Sub frmJob6_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Total = Total + Val(lblFree1.Text) + Val(lblFree2.Text) + Val(lblFree3.Text)
+        lblStarPrice.Text = StartP
 
     End Sub
 
@@ -101,4 +79,36 @@
             lblPaidPrice.Text = Total
         End If
     End Sub
+
+    Private Sub chkCarForMe_CheckedChanged(sender As Object, e As EventArgs) Handles chkCarForMe.CheckedChanged
+        If chkCarForMe.Checked = True Then
+            GroupBox1.Enabled = True
+            GroupBox2.Enabled = True
+            lblStarPrice.Text = StartP
+            lblPaidPrice.Text = Total
+
+        Else
+            GroupBox1.Enabled = False
+            GroupBox2.Enabled = False
+
+            If MsgBox("ต้องการยกเลิกซื้อรถใช่หรือไม่", vbYesNo) = vbYes Then
+                GroupBox1.Enabled = False
+                GroupBox2.Enabled = False
+                chkItemsAdd1.Checked = False
+                chkItemsAdd2.Checked = False
+                chkItemsAdd3.Checked = False
+                chkItemsAdd4.Checked = False
+                chkFree1.Checked = False
+                chkFree2.Checked = False
+                chkFree3.Checked = False
+                chkCarForMe.Enabled = False
+                lblStarPrice.Text = ""
+                lblPaidPrice.Text = ""
+                chkCarForMe.Enabled = True
+            Else
+                chkCarForMe.Checked = True
+            End If
+        End If
+    End Sub
+
 End Class
